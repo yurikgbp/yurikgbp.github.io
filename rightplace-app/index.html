@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="right.place for events | Ostrava | International music festival">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>right.place for events | Ostrava | International music festival</title>
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" href="styles/leaflet.css">
+        <link rel="stylesheet" href="styles/app.css">
+        <link href="images/favicon.png" rel="icon">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <svg style="display: none;">
+            <symbol id="iconClose" viewbox="0 0 64 64">
+                <path d="m18.211 16.422c-0.205 0-0.41 0.077-0.566 0.234l-0.989 0.989c-0.314 0.313-0.314 0.819 0 1.132l13.223 13.223-13.223 13.223c-0.314 0.313-0.314 0.819 0 1.132l0.989 0.989c0.313 0.314 0.819 0.314 1.132 0l13.223-13.223 13.223 13.223c0.313 0.314 0.819 0.314 1.132 0l0.989-0.989c0.314-0.313 0.314-0.819 0-1.132l-13.223-13.223 13.223-13.223c0.314-0.313 0.314-0.819 0-1.132l-0.989-0.989c-0.313-0.314-0.819-0.314-1.132 0l-13.223 13.223-13.223-13.223c-0.157-0.157-0.361-0.234-0.566-0.234z"/>
+            </symbol>
+            <symbol id="iconNext" viewbox="0 0 32 32">
+                <path d="m16.046 10.4c-0.0763 0-0.15218 0.029-0.21094 0.088l-0.2832 0.2833c-0.11752 0.1175-0.11946 0.3063-0.002 0.4238l4.2383 4.2383h-9.0684c-0.1662 0-0.29883 0.1326-0.29883 0.2988v0.4004c0 0.1662 0.13263 0.3008 0.29883 0.3008h9.0684l-4.2363 4.2363c-0.11752 0.1175-0.11946 0.3063-0.002 0.4238l0.2832 0.2832c0.11752 0.1175 0.30826 0.1175 0.42579 0l4.9492-4.9492 0.28321-0.2832c0.11752-0.1175 0.11558-0.3063-0.002-0.4238l-0.28321-0.2832-4.9492-4.9493c-0.0588-0.059-0.13467-0.088-0.21094-0.088z"/>
+                <circle r="12" style="fill:none" cx="16" cy="16"/>
+            </symbol>
+        </svg>
+
+        <div id="preload" class="preload">
+            <div class="preload--container">
+                <div class="preload--h1">
+                    find hotel<br>
+                    <span>for Colours</span>
+                </div>
+                <div class="preload--h2">2200+ rooms</div>
+                <div id="appStart" class="preload--btn preload--btn-hidden">
+                    <svg>
+                        <use xlink:href="#iconNext"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="rp">
+            <a href="/business/events">
+                <div class="rp--logo"></div>
+            </a>
+            <div class="rp--title">
+                <h1>International Music Festival</h1>
+                <h2>Ostrava, Dolní Vítkovice, 14–17/7/2016</h2>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend--item legend--item-event legend--item-visible"><span>event</span></div>
+            <div class="legend--item legend--item-hotel legend--item-visible"><span>hotel</span></div>
+            <div class="legend--item legend--item-route legend--item-visible"><span>route to event</span></div>
+            <div class="legend--title">car drive time</div>
+            <div class="legend--item legend--item-1 legend--item-visible"><span>5 minute zone</span></div>
+            <div class="legend--item legend--item-2 legend--item-visible"><span>10 minute zone</span></div>
+            <div class="legend--item legend--item-3 legend--item-visible"><span>15 minute zone</span></div>
+            <div class="legend--item legend--item-4 legend--item-visible"><span>30 minute zone</span></div>
+            <div class="legend--item legend--item-5 legend--item-visible"><span>30+ minute zone</span></div>
+        </div>
+
+        <div id="map" class="map"></div>
+
+        <div id="panel" class="panel">
+            <div class="panel--content">
+                <div id="dtlLbl" class="panel--title"></div>
+                <div id="dtlAdd" class="panel--address"></div>
+                <div id="dtlCtg" class="panel--catergory"></div>
+                <div id="dtlImg" class="panel--img"></div>
+                <div id="dtlDesc" class="panel--desc"></div>
+                <div class="panel--room">
+                    <span id="dtlRoom"></span> rooms
+                </div>
+                <div class="panel--distance">
+                    <span id="dtlTime"></span>
+                    <span id="dtlLgt"></span> to event location
+                </div>
+            </div>
+            <div class="panel--cta">
+                <a id="dtlCTA" href="http://google.com" target="_blank">
+                    <button class="btn">
+                        <span>book</span> this hotel
+                    </button>
+                </a>
+            </div>
+            <div id="panelClose" class="panel--close">
+                <svg>
+                    <use xlink:href="#iconClose"></use>
+                </svg>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="scripts/data.js"></script>
+        <script src="scripts/leaflet.js"></script>
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
