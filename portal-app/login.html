@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+<link href="style.css" rel="stylesheet"></head>
+<body class='tw-page-login'>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="logo-tmapy" viewBox="0 0 128 128">
+            <path d="M0 0v128h128V0zm18.7 17.2H108c-.3 6.5-8.8 11.5-19.6 17.9-17 10-39.7 23.4-45.2 52V51H18.7zm90.6 4.6V51h-25v49.4H44.5c0-16.1 5-29.5 15.3-40.9 8.9-9.8 20-16.4 29.9-22.3 9-5.3 16.7-9.8 19.6-15.4zM31 107.2h10.3v2.2h-3.8v6.3H35v-6.3H31zm15 0H51l2.5 5.5 2.6-5.5h4.7v8.5H58v-6.4h-.4l-3.2 6.4h-2.2l-3.2-6.4h-.4v6.4h-2.5zm19.5 0h4l4.5 8.5h-3l-.7-1.4h-5.6l-.8 1.4h-3zm8.9 0h8.2c1.6.3 2 1 2 3.2 0 1.9-.3 2.6-1.3 3-.6.2-1.2.2-3 .2h-3.3v2.1h-2.6zm10.1 0h3.5l2.8 3.4 2.6-3.4H97l-4.7 5.5v3h-2.7v-3zm-17.3 2l-1.6 3.2h3.8l-1.6-3.2zm9.8.1v2.2h3.3l1.5-.1c.2-.2.3-.4.3-1s-.1-.9-.5-1h-1.3zm-37 2.5h5.4v1.7h-5.4z"/>
+        </symbol>
+        <symbol id="icon-password" viewBox="0 0 16 16">
+            <path d="M8 0a4.7 4.7 0 0 0-4.8 4.8v1.7H1.6a.8.8 0 0 0-.8.8v8a.8.8 0 0 0 .8.7h13a.8.8 0 0 0 .8-.8v-8a.8.8 0 0 0-.8-.7h-1.8V4.7A4.8 4.8 0 0 0 8 0zm0 1.5a3.2 3.2 0 0 1 3.3 3.3v1.7H4.7V4.7A3.2 3.2 0 0 1 8 1.5zM2.2 8h11.6v6.5H2.2z"/>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 16 16">
+            <path d="M8 0C5.4 0 3.2 2.1 3.2 4.8S5.5 9.4 8 9.4s4.8-2.1 4.8-4.8S10.6 0 8 0zm0 1.5c1.8 0 3.3 1.4 3.3 3.3S9.8 8 8 8 4.7 6.6 4.7 4.7 6.3 1.5 8 1.5zM8 10c-1.2 0-2.4.2-3.5.7-2.2.8-3.7 2.6-3.7 4.6a.8.8 0 0 0 .7.7h13a.8.8 0 0 0 .8-.8c0-2-1.6-3.7-3.8-4.5A9.6 9.6 0 0 0 8 10zm0 1.5c1 0 2 .2 3 .5a4 4 0 0 1 2.5 2.5h-11A4 4 0 0 1 5 12c1-.3 2-.5 3-.5z" />
+        </symbol>
+    </svg>
+
+    <div class="tw-login">
+
+        <div class="tw-login--header">
+            <div></div>
+            <div class="tw-logo">
+                <a href="https://tmapy.cz">
+                    <span class="tw-icon">
+                        <svg xmlns='http://www.w3.org/2000/svg'>
+                            <use xlink:href='#logo-tmapy'></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="tw-loginMain">
+            <h2 class="tw-loginMain--subtitle">GIS města</h2>
+            <h1 class="tw-loginMain--title">Uherské Hradiště</h1>
+
+            <form class="tw-loginForm" action="./portal.html">
+                <label class="tw-loginFormField">
+                    <div class="tw-loginFormField--label">Přihlašovací jméno</div>
+                    <div class="tw-loginInput">
+                        <span class="tw-loginInput--icon">
+                            <span class="tw-icon">
+                                <svg xmlns='http://www.w3.org/2000/svg'>
+                                    <use xlink:href='#icon-user'></use>
+                                </svg>
+                            </span>
+                        </span>
+                        <input class="tw-loginInput--field" name="" placeholder="např. jan.novak" type="text" value="">
+                    </div>
+                </label>
+                <label class="tw-loginFormField">
+                    <div class="tw-loginFormField--label">Heslo</div>
+                    <div class="tw-loginInput">
+                        <span class="tw-loginInput--icon">
+                            <span class="tw-icon">
+                                <svg xmlns='http://www.w3.org/2000/svg'>
+                                    <use xlink:href='#icon-password'></use>
+                                </svg>
+                            </span>
+                        </span>
+                        <input class="tw-loginInput--field" name="" placeholder="Vyplňte vaše heslo" type="password" value="">
+                    </div>
+                </label>
+                <!-- <div class="tw-alert">Oops! Zkontrolujte Vaše přihlašovací jméno a heslo.</div> -->
+                <button type="submit" class="tw-loginForm--btn">Přihlásit se</button>
+            </form>
+        </div>
+
+        <div class="tw-login--footer">
+            Nemáte svůj účet? <a class="tw-link tw-link-b" href="./index.html">Vstupte bez přihlášení</a>
+        </div>
+
+    </div>
+
+<script type="text/javascript" src="main.js"></script></body>
+</html>

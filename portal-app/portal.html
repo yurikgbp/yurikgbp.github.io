@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+<link href="style.css" rel="stylesheet"></head>
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="logo-tmapy" viewBox="0 0 128 128">
+            <path d="M0 0v128h128V0zm18.7 17.2H108c-.3 6.5-8.8 11.5-19.6 17.9-17 10-39.7 23.4-45.2 52V51H18.7zm90.6 4.6V51h-25v49.4H44.5c0-16.1 5-29.5 15.3-40.9 8.9-9.8 20-16.4 29.9-22.3 9-5.3 16.7-9.8 19.6-15.4zM31 107.2h10.3v2.2h-3.8v6.3H35v-6.3H31zm15 0H51l2.5 5.5 2.6-5.5h4.7v8.5H58v-6.4h-.4l-3.2 6.4h-2.2l-3.2-6.4h-.4v6.4h-2.5zm19.5 0h4l4.5 8.5h-3l-.7-1.4h-5.6l-.8 1.4h-3zm8.9 0h8.2c1.6.3 2 1 2 3.2 0 1.9-.3 2.6-1.3 3-.6.2-1.2.2-3 .2h-3.3v2.1h-2.6zm10.1 0h3.5l2.8 3.4 2.6-3.4H97l-4.7 5.5v3h-2.7v-3zm-17.3 2l-1.6 3.2h3.8l-1.6-3.2zm9.8.1v2.2h3.3l1.5-.1c.2-.2.3-.4.3-1s-.1-.9-.5-1h-1.3zm-37 2.5h5.4v1.7h-5.4z"/>
+        </symbol>
+    </svg>
+
+    <div class="tw-layout">
+        <div class="tw-layout--sidebar">
+            <div class="tw-sidebar">
+                <div class="tw-sidebar--intro">
+                    <h2 class="tw-h2">Uherské Hradiště</h2>
+                    <h1 class="tw-h1">Petr Šebesta</h1>
+                    <a href="./index.html">
+                        <button class="tw-sidebar--btn">Odhlásit se</button>
+                    </a>
+                </div>
+                <div class="tw-sidebar--bookmarks">
+                    <h4 class="tw-h4">Aplikace</h4>
+                    <ul class="tw-bookmarks">
+                        <a href="#apps-admin">
+                            <li class="tw-bookmarksItem">
+                                <div class="tw-bookmarksItem--label">Administrace systému</div>
+                                <div class="tw-bookmarksItem--badge">6</div>
+                            </li>
+                        </a>
+                        <a href="#apps-office">
+                            <li class="tw-bookmarksItem">
+                                <div class="tw-bookmarksItem--label">Agendové aplikace</div>
+                                <div class="tw-bookmarksItem--badge">5</div>
+                            </li>
+                        </a>
+                        <a href="#apps-maps">
+                            <li class="tw-bookmarksItem">
+                                <div class="tw-bookmarksItem--label">Mapové aplikace</div>
+                                <div class="tw-bookmarksItem--badge">23</div>
+                            </li>
+                        </a>
+                        <a href="#apps-pasport">
+                            <li class="tw-bookmarksItem">
+                                <div class="tw-bookmarksItem--label">Pasporty</div>
+                                <div class="tw-bookmarksItem--badge">10</div>
+                            </li>
+                        </a>
+                        <a href="#apps-hlaseni">
+                            <li class="tw-bookmarksItem">
+                                <div class="tw-bookmarksItem--label">Zlepši své město</div>
+                                <div class="tw-bookmarksItem--badge">4</div>
+                            </li>
+                        </a>
+                        <a href="#apps-bezpecnost">
+                            <li class="tw-bookmarksItem">
+                                <div class="tw-bookmarksItem--label">Analýza bezpečnosti</div>
+                                <div class="tw-bookmarksItem--badge">2</div>
+                            </li>
+                        </a>
+                        <a href="#apps-other">
+                            <li class="tw-bookmarksItem">
+                                <div class="tw-bookmarksItem--label">Ostatní</div>
+                                <div class="tw-bookmarksItem--badge">4</div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="tw-layout--nav">
+            <div id="nav" class="tw-nav">
+                <span class="tw-nav--item tw-nav--item-active" data-nav="apps">Aplikace</span>
+                <span class="tw-nav--item tw-nav--item-hasBadge" data-nav="news">Novinky</span>
+            </div>
+        </nav>
+        <main class="tw-layout--main">
+
+            <div id="apps" class="tw-apps tw-apps-active">
+                <section>
+                    <h4 id="apps-admin" class="tw-h4">Administrace systému</h4>
+                    <div class="tw-applicationGrid">
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/ceu/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/ceu.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">CEU</h5>
+                                    <div class="tw-application--desc">Centrální evidence vazeb mezi uživateli a jejich právy k aplikacím WGP.</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/security/users/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/sprava_uzivatelu.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Správa uživatelů</h5>
+                                    <div class="tw-application--desc">Evidence uživatelů (externích) v databázi a skupin uživatelů (odbory, pracovní skupiny, atd.)</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/debug/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/nastaveni-pro-ladeni.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Nastavení pro ladění</h5>
+                                    <div class="tw-application--desc">Detail nastavení práv přihlášeného uživatele, výpis SQL, zobrazení chyb</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/tools/log-access-report/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/log.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Logování přístupů</h5>
+                                    <div class="tw-application--desc">Seznam přihlášení do GIS města</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/nastenka/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/nastenka.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Informační nástěnka</h5>
+                                    <div class="tw-application--desc">Nejnovější informace z města</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/services/cache/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/nophoto.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Administarce MapServer Cache</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section>
+                    <h4 id="apps-office" class="tw-h4">Agendové aplikace</h4>
+                    <div class="tw-applicationGrid">
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/registry/ren/parcely/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/twist-ren.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">T-WIST REN</h5>
+                                    <div class="tw-application--desc">Registr nemovitostí</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/ren-poznamky/poznamky/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/informace-kn.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Informace k nemovitostem</h5>
+                                    <div class="tw-application--desc">Informace k nemovitostem</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/gis-objekty/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/gis=objekty.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">GIS Objekty</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/edas/datova-sada/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/edas.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">EDAS</h5>
+                                    <div class="tw-application--desc">Katalog prostorových dat</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/zavazna-stanoviska/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/stanoviska.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Evidence závazných stanovisek</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section>
+                    <h4 id="apps-maps" class="tw-h4">Mapové aplikace</h4>
+                    <div class="tw-applicationGrid">
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/zakladni-aplikace/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/zakladni-mapa.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Základní mapa</h5>
+                                    <div class="tw-application--desc">Mapa města Uherské Hradiště</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/katastralni-mapa/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/katastralni-mapa.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Katastrální mapa</h5>
+                                    <div class="tw-application--desc">Mapa s detailními údaji katastru nemovitostí a užitečnými z katastru odvozenými vrstvami</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/uzemni-plan/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/uzemni-plan.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Územní plán</h5>
+                                    <div class="tw-application--desc">Územní plán města Uherské Hradiště</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/pasport-hrist-sportovist/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/hriste.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa pasportu dětských hřišť a sportovišť</h5>
+                                    <div class="tw-application--desc">Seznam a rozmístšní dětských hřišť a sportovišť</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/pasport-komunikaci/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/mapa-pasportu-komunikaci.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa pasportu komunikací</h5>
+                                    <div class="tw-application--desc">Aplikace pro evidenci a správu komunikací ve vlastnictví města</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/mapa-komunikaci/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/mapa-pasportu-komunikaci-verejnost.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa komunikací</h5>
+                                    <div class="tw-application--desc">Mapa komunikací ve vlastnictví města</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/pasport-mobiliare/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/pasport-mobiliare.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa pasportu mobiliáře</h5>
+                                    <div class="tw-application--desc">Aplikace pro evidenci mobiliáře</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/pasport-odpadoveho-hospodarstvi/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/pasport-odpadoveho-hospodarstvi.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa pasportu odpadového hospodářství</h5>
+                                    <div class="tw-application--desc">Pasport odpadového hospodářství</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/pasport-optickych-siti/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/metropolitni-sit.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa pasportu optických sítí</h5>
+                                    <div class="tw-application--desc">Mapa optických sítí</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/pasport-osvetleni/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/mapa-pasportu-osvetleni.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa pasportu osvětlení</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/pasport-zelene/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/mapa-pasportu-zelene.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa pasportu zeleně</h5>
+                                    <div class="tw-application--desc">Mapa obsahuje informace o městské zeleni</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/pusobnosti-uradu/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/urad.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa působnosti úřadů</h5>
+                                    <div class="tw-application--desc">Městské úřady a veřejné budovy</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/verejna-prostranstvi/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/mapa-verejneho-prostranstvi.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa veřejných prostranství</h5>
+                                    <div class="tw-application--desc">Mapa veřejných prostranství</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/mapove-podklady/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/mapove-podklady.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapové podklady (mapa)</h5>
+                                    <div class="tw-application--desc">Aplikace pro mapové podklady</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/technicka-mapa/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/digitalni-technicka-mapa-mesta.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Technická mapa</h5>
+                                    <div class="tw-application--desc">Informativní zobrazení digitální technické mapy města Brna</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/turisticka-mapa/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/turisticka-mapa.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Turistická mapa</h5>
+                                    <div class="tw-application--desc">Turistická místa, stezky i cyklotrasy</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/uzemni-plany-obci/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/uzemni-plan.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Územní plány obcí</h5>
+                                    <div class="tw-application--desc">Územní plány obcí</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/zavazna-stanoviska/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/stanoviska.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Závazná stanoviska</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/krizove-rizeni/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/krizove-rizeni.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa krizového řízení</h5>
+                                    <div class="tw-application--desc">Krizové řízení</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/zivotni-prostredi/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/mapa-zivotniho-prostredi.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapa ÚAP - životní prostředí</h5>
+                                    <div class="tw-application--desc">Životní prostředí</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/seniori/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/soc.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Sociální služby</h5>
+                                    <div class="tw-application--desc">Sociální služby</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/tms/shp_uh/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/nophoto.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Stavebně-historický průzkum Uherské Hradiště</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/tms/shp_ma/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/nophoto.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Stavebně-historický průzkum Maratice</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section>
+                    <h4 id="apps-pasport" class="tw-h4">Pasporty</h4>
+                    <div class="tw-applicationGrid">
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/export-import/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/export-import.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Export a import</h5>
+                                    <div class="tw-application--desc">Export a import</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/mapove-podklady/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/mapove-podklady.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Mapové podklady</h5>
+                                    <div class="tw-application--desc">Aplikace pro mapové podklady</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/pasport-hrist-a-sportovist/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/mapa-pasportu-hrist-sportovist.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Pasport dětských hřišť a sportovišť</h5>
+                                    <div class="tw-application--desc">Dětská hřiště a sportoviště</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/pasport-komunikaci/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/pasport-komunikaci.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Pasport komunikací</h5>
+                                    <div class="tw-application--desc">Aplikace pro evidenci a správu komunikací ve vlastnictví města</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/pasport-mobiliare/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/pasport-mobiliare.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Pasport mobiliáře</h5>
+                                    <div class="tw-application--desc">Aplikace pro evidenci mobiliáře</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/pasport-odpadu/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/pasport-odpadoveho-hospodarstvi.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Pasport odpadového hospodářství</h5>
+                                    <div class="tw-application--desc">Pasport odpadového hospodářství</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/pasport-osvetleni/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/mapa-pasportu-osvetleni.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Pasport osvětlení</h5>
+                                    <div class="tw-application--desc">Pasport osvětlení</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/pasport-optickych-siti/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/metropolitni-sit.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Pasport optických sítí</h5>
+                                    <div class="tw-application--desc">Pasport optických sítí</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/pasport-zelene/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/pasport-zelene.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Pasport zeleně</h5>
+                                    <div class="tw-application--desc">Aplikace pro evidenci a správu městské zeleně</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/ost/pasport-mobiliare-old/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/pasport-mobiliare.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Pasport mobiliáře (původní verze)</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section>
+                    <h4 id="apps-hlaseni" class="tw-h4">Zlepši své město</h4>
+                    <div class="tw-applicationGrid">
+                        <a href="http://hlaseni.tmapy.cz/#592005" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/park.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Veřejná aplikace</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/analyza/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/nophoto.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Analytická aplikace</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/analyza-hlaseni/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/nophoto.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Analýza hlášení závad</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://hlaseni.tmapy.cz/tw/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/nophoto.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Administrátorská aplikace</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section>
+                    <h4 id="apps-bezpecnost" class="tw-h4">Analýza bezpečnosti</h4>
+                    <div class="tw-applicationGrid">
+                        <a href="http://gis.mesto-uh.cz/mapa/analyza-bezpecnosti/src/index.html" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/safety.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">e-Analýza bezpečnosti</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://cz-mu-uh.matej6.tmapserver.cz/mapa/bezpecnost/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/safety.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Analýza bezpečnosti</h5>
+                                    <div class="tw-application--desc"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section>
+                    <h4 id="apps-other" class="tw-h4">Ostatní</h4>
+                    <div class="tw-applicationGrid">
+                        <a href="https://www.youtube.com/playlist?list=PLR2fPrbThxu3GZMt1rCzOBREbycuXVBSf" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/spinbox-help.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Nápovědy k mapovému klientu</h5>
+                                    <div class="tw-application--desc">Videokanál obsahující nápovědy k mapovému klientu Spinbox</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/playlist?list=PLR2fPrbThxu008jcPSlBdzHzrMgdzdrD-" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/twist-ren-help.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Nápovědy k T-WIST REN</h5>
+                                    <div class="tw-application--desc">Videokanál obsahující nápovědy k T-WIST REN</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.tmapy.cz/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/tmapy.png" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">T-MAPY</h5>
+                                    <div class="tw-application--desc">Professional geospatial solutions</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.mesto-uh.cz/" target="_blank" rel="noopener noreferrer">
+                            <div class="tw-application">
+                                <div class="tw-application--figure">
+                                    <img src="./img/uh.jpg" alt="">
+                                </div>
+                                <div class="tw-application--info">
+                                    <h5 class="tw-application--name">Město Uherské Hradiště</h5>
+                                    <div class="tw-application--desc">Oficiální portál města Uherské Hradiště</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div id="news" class="tw-news">
+                <div class="tw-newsCard">
+                    <div class="tw-newsCard--date">
+                        <div>24</div>
+                        <div>dub</div>
+                    </div>
+                    <div class="tw-newsCard--info">
+                        <div class="tw-newsCard--title">Aktualizace dat katastru nemovitostí</div>
+                        <div class="tw-newsCard--desc">Byla provedena aktualizace databáze KN na stav k 1.4.2018. Další aktualizace je plánována v červenci 2018.</div>
+                    </div>
+                </div>
+                <div class="tw-newsCard">
+                    <div class="tw-newsCard--date">
+                        <div>22</div>
+                        <div>led</div>
+                    </div>
+                    <div class="tw-newsCard--info">
+                        <div class="tw-newsCard--title">Byla provedena aktualizace databáze KN na stav 1.1.2018</div>
+                        <div class="tw-newsCard--desc">Další aktualizace databáze KN je plánována na duben roku 2018.</div>
+                    </div>
+                </div>
+                <div class="tw-newsCard">
+                    <div class="tw-newsCard--date">
+                        <div>25</div>
+                        <div>črc</div>
+                    </div>
+                    <div class="tw-newsCard--info">
+                        <div class="tw-newsCard--title">Modul pro import DGN</div>
+                        <div class="tw-newsCard--desc">V rámci migrace GIS byl zpřístupněn modul pro import DGN Souborů. Každý správce pasportu si může nahrát do GISu DGN soubor jako podklad a poté nad ním zakreslovat či měnit co je třeba. Pro zatím je modul zpřístupněn jen pro roli Referent SMM. Přístup <a href="https://gis-vm.mesto-uh.cz/ost/mapove-podklady/">ZDE</a>.Podmínkou importu je verze 7 DGN souboru a nutnost mít dgn soubor zabalen v *.zip souboru</div>
+                    </div>
+                </div>
+                <div class="tw-newsCard">
+                    <div class="tw-newsCard--date">
+                        <div>25</div>
+                        <div>črc</div>
+                    </div>
+                    <div class="tw-newsCard--info">
+                        <div class="tw-newsCard--title">Pasport veřejného osvětlení</div>
+                        <div class="tw-newsCard--desc">Město Uherské Hradiště využívá pro evidenci veřejného osvětlení SW společnosti Datmolux. Nyní je nově je zprovozněna služba, která z uvedeného softwaru vizualizuje sloupy veřejného osvětlení s čísly na mapovém podkladu.</div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+<script type="text/javascript" src="main.js"></script></body>
+</html>
