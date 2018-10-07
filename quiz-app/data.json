@@ -1,0 +1,128 @@
+[
+    {
+        "name": {
+            "cz": "Nazev tematickeho okruhu 1",
+            "ru": "Водитель не должен"
+        },
+        "questions": [
+            {
+                "question": {
+                    "cz": "1Řidič nesmí ohrozit chodce",
+                    "ru": "Водитель не должен подвергать опасности пешеходы"
+                },
+                "possibilities": [
+                    {
+                        "cz": "jen pokud přecházejí na vyznačeném přechodu pro chodce v obci.",
+                        "ru": "только если они пересекают отмеченный пешеходный переход в деревне."
+                    },
+                    {
+                        "cz": "pouze při otáčení nebo couvání.",
+                        "ru": "только при повороте или реверсе."
+                    },
+                    {
+                        "cz": "přecházejícího pozemní komunikaci, na kterou řidič odbočuje, při odbočování na místo ležící mimo pozemní komunikaci, při vjíždění na pozemní komunikaci a při otáčení nebo couvání.",
+                        "ru": "прохождение дороги, к которой поворачивается водитель, при повороте к месту за пределами дороги, входе в дорогу и повороте или переворачивании."
+                    }
+                ],
+                "answer": 0,
+                "img": null
+            },
+            {
+                "question": {
+                    "cz": "2Řidič nesmí ohrozit chodce",
+                    "ru": "Водитель не должен подвергать опасности пешеходы"
+                },
+                "possibilities": [
+                    {
+                        "cz": "jen pokud přecházejí na vyznačeném přechodu pro chodce v obci.",
+                        "ru": "только если они пересекают отмеченный пешеходный переход в деревне."
+                    },
+                    {
+                        "cz": "pouze při otáčení nebo couvání.",
+                        "ru": "только при повороте или реверсе."
+                    },
+                    {
+                        "cz": "přecházejícího pozemní komunikaci, na kterou řidič odbočuje, při odbočování na místo ležící mimo pozemní komunikaci, při vjíždění na pozemní komunikaci a při otáčení nebo couvání.",
+                        "ru": "прохождение дороги, к которой поворачивается водитель, при повороте к месту за пределами дороги, входе в дорогу и повороте или переворачивании."
+                    }
+                ],
+                "answer": 1,
+                "img": "./img/cat.jpg"
+            },
+            {
+                "question": {
+                    "cz": "3Řidič nesmí ohrozit chodce",
+                    "ru": "Водитель не должен подвергать опасности пешеходы"
+                },
+                "possibilities": [
+                    {
+                        "cz": "jen pokud přecházejí na vyznačeném přechodu pro chodce v obci.",
+                        "ru": "только если они пересекают отмеченный пешеходный переход в деревне."
+                    },
+                    {
+                        "cz": "pouze při otáčení nebo couvání.",
+                        "ru": "только при повороте или реверсе."
+                    },
+                    {
+                        "cz": "přecházejícího pozemní komunikaci, na kterou řidič odbočuje, při odbočování na místo ležící mimo pozemní komunikaci, při vjíždění na pozemní komunikaci a při otáčení nebo couvání.",
+                        "ru": "прохождение дороги, к которой поворачивается водитель, при повороте к месту за пределами дороги, входе в дорогу и повороте или переворачивании."
+                    }
+                ],
+                "answer": 2,
+                "img": null
+            }
+        ]
+    },
+    {
+        "name": {
+            "cz": "Nazev tematickeho okruhu",
+            "ru": "Водитель не должен"
+        },
+        "questions": [
+            {
+                "question": {
+                    "cz": "4Řidič nesmí ohrozit chodce",
+                    "ru": "Водитель не должен подвергать опасности пешеходы"
+                },
+                "possibilities": [
+                    {
+                        "cz": "jen pokud přecházejí na vyznačeném přechodu pro chodce v obci.",
+                        "ru": "только если они пересекают отмеченный пешеходный переход в деревне."
+                    },
+                    {
+                        "cz": "pouze při otáčení nebo couvání.",
+                        "ru": "только при повороте или реверсе."
+                    },
+                    {
+                        "cz": "přecházejícího pozemní komunikaci, na kterou řidič odbočuje, při odbočování na místo ležící mimo pozemní komunikaci, při vjíždění na pozemní komunikaci a při otáčení nebo couvání.",
+                        "ru": "прохождение дороги, к которой поворачивается водитель, при повороте к месту за пределами дороги, входе в дорогу и повороте или переворачивании."
+                    }
+                ],
+                "answer": 0,
+                "img": null
+            },
+            {
+                "question": {
+                    "cz": "5Řidič nesmí ohrozit chodce",
+                    "ru": "Водитель не должен подвергать опасности пешеходы"
+                },
+                "possibilities": [
+                    {
+                        "cz": "jen pokud přecházejí na vyznačeném přechodu pro chodce v obci.",
+                        "ru": "только если они пересекают отмеченный пешеходный переход в деревне."
+                    },
+                    {
+                        "cz": "pouze při otáčení nebo couvání.",
+                        "ru": "только при повороте или реверсе."
+                    },
+                    {
+                        "cz": "přecházejícího pozemní komunikaci, na kterou řidič odbočuje, při odbočování na místo ležící mimo pozemní komunikaci, při vjíždění na pozemní komunikaci a při otáčení nebo couvání.",
+                        "ru": "прохождение дороги, к которой поворачивается водитель, при повороте к месту за пределами дороги, входе в дорогу и повороте или переворачивании."
+                    }
+                ],
+                "answer": 0,
+                "img": null
+            }
+        ]
+    }
+]
