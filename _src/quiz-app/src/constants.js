@@ -1,0 +1,7 @@
+export const QUIZ = {
+    SET_DATA: 'SET_DATA',
+    SET_TOPIC: 'SET_TOPIC',
+    SET_QUESTION: 'SET_QUESTION',
+    SET_OPTION: 'SET_OPTION',
+    TOGGLE_MAIN: 'TOGGLE_MAIN'
+};

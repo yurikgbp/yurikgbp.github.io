@@ -1,0 +1,14 @@
+.topics {
+
+}
+
+.topics--original {
+    margin-bottom: 2px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.topics--translated {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.67);
+}

@@ -1,0 +1,102 @@
+.question {
+    padding: 24px;
+}
+
+@media (min-width: 720px) {
+    .question {
+        padding: 48px;
+    }
+}
+
+.question--head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.question--head > .btn {
+    margin-left: -5px;
+    margin-right: 8px;
+}
+
+.question--head > .btn-icon > div {
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width: 720px) {
+    .question--head > .btn {
+        display: none;
+    }
+}
+
+.question--num {
+    flex: auto;
+    padding-right: 35px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+@media (min-width: 720px) {
+    .question--num {
+        text-align: left;
+    }
+}
+
+.question--txt-original {
+    margin-bottom: 4px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.question--txt-translated {
+    margin-bottom: 32px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .66);
+}
+
+.question--img {
+    max-width: 720px;
+    margin-bottom: 16px;
+}
+
+.question--img img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.question--possibilities {
+    max-width: 720px;
+    margin-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #fff;
+    box-shadow: 0 3px 24px rgba(31, 46, 74, 0.15);
+    border-radius: 8px;
+}
+
+.question--actionBar {
+    display: flex;
+    max-width: 816px;
+    margin-left: -24px;
+    margin-right: -24px;
+    padding: 0 24px;
+}
+
+@media (min-width: 720px) {
+    .question--actionBar {
+        margin-left: -48px;
+        margin-right: -48px;
+        padding: 0 48px;
+    }
+}
+
+.question--actionBar > span {
+    flex: auto;
+}
+
+.question--actionBar > button:not(:last-child) {
+    margin-right: 16px;
+}

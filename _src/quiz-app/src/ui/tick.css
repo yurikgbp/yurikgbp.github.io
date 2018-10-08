@@ -1,0 +1,46 @@
+.tick {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.tick input {
+    display: none;
+}
+
+.tick--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border: 1px solid #c2c9d5;
+    border-radius: 50%;
+    color: transparent;
+    transition: all .3s;
+}
+
+.tick input:checked + .tick--icon {
+    border: 1px solid #236d84;
+    /* background: linear-gradient(344deg, #236d84 0%, #41a4c1 100%); */
+    background: #236d84;
+}
+
+.tick input:checked + .tick--icon-true {
+    animation: correctCheck;
+    animation-delay: .7s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.tick input:checked + .tick--icon-false {
+    animation: incorrectCheck;
+    animation-delay: .7s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.radio:hover .tick--icon {
+    border: 1px solid #236d84;
+    box-shadow: 0 3px 16px rgba(31, 46, 74, 0.33);
+}
